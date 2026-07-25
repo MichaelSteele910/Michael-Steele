@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Michael Steele | Faith • Discipline • Creation</title>
+
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+body{
+
+    background:#050505;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    overflow-x:hidden;
+
+}
+
+
+
+/* NAVIGATION */
+
+
+nav{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:30px 8%;
+
+    position:fixed;
+    width:100%;
+    top:0;
+
+    background:rgba(5,5,5,0.7);
+    backdrop-filter:blur(10px);
+
+    z-index:100;
+
+}
+
+
+
+.logo{
+
+    font-size:25px;
+    font-weight:bold;
+
+}
+
+
+
+.nav-links a{
+
+    color:#aaa;
+    text-decoration:none;
+    margin-left:30px;
+    transition:.3s;
+
+}
+
+
+
+.nav-links a:hover{
+
+    color:white;
+
+}
+
+
+
+
+
+/* HERO */
+
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    padding:10%;
+
+
+}
+
+
+
+.tag{
+
+    color:#3b82f6;
+    letter-spacing:2px;
+
+}
+
+
+
+.hero h1{
+
+    font-size:70px;
+    line-height:1.1;
+
+    max-width:900px;
+
+    margin-top:20px;
+
+}
+
+
+
+.subtitle{
+
+    color:#aaa;
+
+    font-size:22px;
+
+    max-width:650px;
+
+    margin-top:30px;
+
+    line-height:1.6;
+
+}
+
+
+
+.buttons{
+
+    margin-top:40px;
+
+}
+
+
+
+.btn{
+
+    display:inline-block;
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    background:white;
+
+    color:black;
+
+    text-decoration:none;
+
+    margin-right:15px;
+
+    transition:.3s;
+
+}
+
+
+
+.btn:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+
+.secondary{
+
+    background:#111;
+    color:white;
+
+}
+
+
+
+
+
+/* SECTIONS */
+
+
+.section{
+
+    padding:100px 10%;
+
+}
+
+
+
+.section h2{
+
+    font-size:45px;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.text{
+
+    color:#aaa;
+
+    max-width:800px;
+
+    font-size:20px;
+
+    line-height:1.8;
+
+}
+
+
+
+
+
+/* CARDS */
+
+
+.cards{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:25px;
+
+}
+
+
+
+.card{
+
+    background:#111;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    width:300px;
+
+    transition:.4s;
+
+    border:1px solid #222;
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    background:#161616;
+
+}
+
+
+
+.card h3{
+
+    margin-bottom:15px;
+
+    color:#3b82f6;
+
+}
+
+
+
+.card p{
+
+    color:#aaa;
+
+    line-height:1.6;
+
+}
+
+
+
+
+
+/* ANIMATED BACKGROUND */
+
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+
+    height:500px;
+
+    background:#1d4ed8;
+
+    filter:blur(150px);
+
+    opacity:.25;
+
+    top:20%;
+
+    right:10%;
+
+    z-index:-1;
+
+}
+
+
+
+
+
+/* SCROLL ANIMATION */
+
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:1s;
+
+}
+
+
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+
+
+
+footer{
+
+    text-align:center;
+
+    padding:40px;
+
+    color:#777;
+
+}
+
+
+
+
+
+
+
+/* MOBILE */
+
+
+@media(max-width:800px){
+
+
+.hero h1{
+
+    font-size:45px;
+
+}
+
+
+.nav-links{
+
+    display:none;
+
+}
+
+
+.card{
+
+    width:100%;
+
+}
+
+
+}
+
+
+
+</style>
+
+</head>
+
+
+
+
+
+
+<body>
+
+
+
+
+
+<nav>
+
+
+<div class="logo">
+Michael Steele
+</div>
+
+
+<div class="nav-links">
+
+<a href="#about">About</a>
+<a href="#disciplines">Disciplines</a>
+<a href="#projects">Projects</a>
+<a href="#journal">Journal</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+
+</nav>
+
+
+
+
+
+
+
+
+
+<section class="hero">
+
+
+<p class="tag reveal">
+
+FAITH • DISCIPLINE • CREATION
+
+</p>
+
+
+
+<h1 class="reveal">
+
+Building with purpose.
+<br>
+Growing through the journey.
+
+</h1>
+
+
+
+
+<p class="subtitle reveal">
+
+A personal hub documenting my journey through
+sport, engineering, technology and creativity.
+
+</p>
+
+
+
+<div class="buttons reveal">
+
+
+<a href="#about" class="btn">
+Explore
+</a>
+
+
+<a href="#projects" class="btn secondary">
+Projects
+</a>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section id="about" class="section">
+
+
+<h2 class="reveal">
+About Me
+</h2>
+
+
+
+<p class="text reveal">
+
+I am Michael Steele — a student, athlete, and builder.
+
+This website documents my journey, the disciplines I pursue,
+and the things I create.
+
+My goal is to faithfully use the abilities and opportunities
+God has given me while continuing to learn, grow and serve.
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section id="disciplines" class="section">
+
+
+<h2 class="reveal">
+Disciplines
+</h2>
+
+
+
+
+<div class="cards">
+
+
+
+<div class="card reveal">
+
+<h3>
+⚽ Football
+</h3>
+
+<p>
+Developing through training, competition,
+discipline and continuous improvement.
+</p>
+
+</div>
+
+
+
+
+<div class="card reveal">
+
+<h3>
+🔧 Engineering/school
+</h3>
+
+<p>
+Understanding systems, machines and solving
+problems through design.
+</p>
+
+</div>
+
+
+
+
+
+<div class="card reveal">
+
+<h3>
+💻 Technology
+</h3>
+
+<p>
+Creating digital projects and exploring
+technology.
+</p>
+
+</div>
+
+
+
+
+
+<div class="card reveal">
+
+<h3>
+🎸 Music
+</h3>
+
+<p>
+Music, ideas and creative expression.
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section id="projects" class="section">
+
+
+<h2 class="reveal">
+Projects
+</h2>
+
+
+<p class="text reveal">
+
+A collection of things I have built,
+learned from and continue developing.
+
+</p>
+
+
+
+
+<div class="cards">
+
+
+<div class="card reveal">
+
+<h3>
+Personal Website
+</h3>
+
+<p>
+My digital hub documenting my journey.
+</p>
+
+</div>
+
+
+
+
+<div class="card reveal">
+
+<h3>
+Future Projects
+</h3>
+
+<p>
+Engineering, technology and creative projects
+coming soon.
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section id="journal" class="section">
+
+
+<h2 class="reveal">
+Journal
+</h2>
+
+
+<p class="text reveal">
+
+A place for reflections, lessons learned,
+challenges overcome and growth.
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section id="contact" class="section">
+
+
+<h2 class="reveal">
+Contact
+</h2>
+
+
+<p class="text reveal">
+
+For opportunities, collaborations and projects.
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+<footer>
+
+© 2026 Michael Steele
+
+</footer>
+
+
+
+
+
+
+
+
+
+<script>
+
+
+const reveals = document.querySelectorAll(".reveal");
+
+
+function revealOnScroll(){
+
+
+reveals.forEach(element=>{
+
+
+const position = element.getBoundingClientRect().top;
+
+
+if(position < window.innerHeight - 100){
+
+element.classList.add("active");
+
+}
+
+
+});
+
+
+}
+
+
+
+window.addEventListener("scroll", revealOnScroll);
+
+
+revealOnScroll();
+
+
+
+</script>
+
+
+
+
+
+</body>
+
+</html>
